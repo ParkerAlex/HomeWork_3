@@ -16,6 +16,8 @@ public class Cat {
 	
     static final String[] arrayCat = {"Kuzia", "Barsik", "German", "Tom", "Sonia"};
     static final int[] arrayAge = {1, 2, 3, 4, 5};
+    
+    public String cat; 
 	
 /////////////////////////////////////////////////////////////////Part-1////////////////////////////////////////////////////
 	public  String getName() {
@@ -59,7 +61,33 @@ public class Cat {
 	public static int[] getArrayAge() {
 		return arrayAge;
 	}
+/////////////////////////////////////////////////////////////////Part-5////////////////////////////////////////////////////
+	@Override
+	public String toString() {
+		return "Cat [cat=" + cat + "]";
+	}
+	
+	
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Cat other = (Cat) obj;
+		if (cat == null) {
+			if (other.cat != null)
+				return false;
+		} else if (!cat.equals(other.cat))
+			return false;
+		return true;
+	}
+
+
+	}
 	
 	
 	 
-}
+
