@@ -56,7 +56,10 @@ public class Main {
         	count++;
         }
         System.out.println();
+///////////////////////////////////////////////////////PART-5////////////////////////////////// 
         
+        Cat cat3 = new Cat("MURKA", 10);          
+        System.out.println(cat3);         //WHY ZERO???????????????????
 	}
 
 }

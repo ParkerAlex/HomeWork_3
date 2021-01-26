@@ -62,10 +62,14 @@ public class Cat {
 		return arrayAge;
 	}
 /////////////////////////////////////////////////////////////////Part-5////////////////////////////////////////////////////
+	
+	public String nameCat;
+	public int ageCat;
+	
 	@Override
-	public String toString() {
-		return "Cat [cat=" + cat + "]";
-	}
+	public String toString() {	
+		return cat = "Name is " + nameCat + "; Age is " + ageCat;
+ 	}
 	
 	
 	@Override
